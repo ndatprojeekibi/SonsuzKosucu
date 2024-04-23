@@ -359,6 +359,7 @@
 "Assets/Scripts/Environment/GroundTile.cs"
 "Assets/Scripts/Environment/Obstacle.cs"
 "Assets/Scripts/GameManager.cs"
+"Assets/Scripts/GameOver.cs"
 "Assets/Scripts/Player/PlayerMovement.cs"
 -langversion:9.0
 /deterministic

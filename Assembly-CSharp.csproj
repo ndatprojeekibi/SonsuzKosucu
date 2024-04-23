@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\Collectables\GoldRotater.cs" />
     <Compile Include="Assets\Scripts\Environment\Obstacle.cs" />
     <Compile Include="Assets\Scripts\Collectables\GoldPick.cs" />
+    <Compile Include="Assets\Scripts\GameOver.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraMovement.cs" />
   </ItemGroup>

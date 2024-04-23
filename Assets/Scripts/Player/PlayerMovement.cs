@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
 
     bool alive = true;
 
+    GameOver gameOver;
+
     private void FixedUpdate()
     {
         // Player hayatta degilse hareket etmesin.
@@ -33,10 +35,17 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+
+    }
+
     public void Die()
     {
         alive = false;
-        Invoke("Restart", 1);
+
+        GameOver.inst.Setup();
+        Invoke("Restart", 2);
     }
 
     void Restart()
