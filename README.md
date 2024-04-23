@@ -1,4 +1,4 @@
-Çanakkale Onsekiz Mart Üniversitesi Bilgisayar Müühendisliği Bölümü
+Çanakkale Onsekiz Mart Üniversitesi Bilgisayar Mühendisliği Bölümü
 Nesneye Dayalı Analiz ve Tasarım Dersi 
 Sosuz Koşucu Oyunu 
 Proje Ekibi
