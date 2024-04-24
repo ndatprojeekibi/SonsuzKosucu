@@ -1,4 +1,4 @@
-    **Çanakkale Onsekiz Mart Üniversitesi Bilgisayar Mühendisliği Bölümü
+    ****Çanakkale Onsekiz Mart Üniversitesi Bilgisayar Mühendisliği Bölümü
     Nesneye Dayalı Analiz ve Tasarım Dersi__
 **Sonsuz Koşucu Oyunu Proje Ekibi**
 >1=>200401063 Murat Can YAMAN,
