@@ -11,4 +11,6 @@
 ## Kullanılan Teknolojiler
 - Unity 3D
 - C#
+## Kodu Nasıl Geliştirdik?
+Engin Hoca'nın derste anlattığı fonksiyonlara baz alaraktan oyunumuzu geliştirdik.
 
