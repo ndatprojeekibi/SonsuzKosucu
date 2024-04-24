@@ -11,7 +11,10 @@ public class PlayerMovement : MonoBehaviour
 
     bool alive = true;
 
-    public float speedIncrease = 0.2f;
+    public float speedIncrease = 1f;
+
+    private float jumpForce = 10;
+    public bool isOnGround = true;
 
     private void FixedUpdate()
     {
@@ -35,6 +38,20 @@ public class PlayerMovement : MonoBehaviour
         {
             Die();
         }
+
+        // Ziplama Movement
+        if (Input.GetButtonDown("Jump") && isOnGround)
+        {
+            rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
+            // Player zeminde degil.
+            isOnGround = false;
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        // eger collision varsa demek ki Player zeminde.
+        isOnGround = true;
     }
 
     private void Start()

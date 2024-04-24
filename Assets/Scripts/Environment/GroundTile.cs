@@ -5,6 +5,8 @@ public class GroundTile : MonoBehaviour
     GroundSpawner groundSpawner;
     public GameObject obstaclePrefab;
     public GameObject goldPrefab;
+    public GameObject tallObstaclePrefab;
+    float tallObstacleChance = 0.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -28,12 +30,21 @@ public class GroundTile : MonoBehaviour
 
     void SpawnObstacle()
     {
+        // Hangi engeli ortaya cikaracagini sec.
+        GameObject obstacleToSpawn = obstaclePrefab;
+        float random = Random.Range(0f, 1f);
+
+        if(random < tallObstacleChance)
+        {
+            obstacleToSpawn = tallObstaclePrefab;
+        }
+
         // Engeli ortaya cikarmak icin rastgele bir konum sec.
         int obstacleSpawnIndex = Random.Range(2, 5);
         Transform spawnPoint = transform.GetChild(obstacleSpawnIndex).transform;
 
         // Engeli olustur.
-        Instantiate(obstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
+        Instantiate(obstacleToSpawn, spawnPoint.position, Quaternion.identity, transform);
     }
 
     void SpawnGolds()

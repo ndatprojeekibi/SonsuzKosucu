@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 6567305974240005718}
   m_Layer: 0
   m_Name: GroundTile
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,6 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstaclePrefab: {fileID: 9166004493380578408, guid: e823bc75283fde64e8b0ff5e42451b78, type: 3}
   goldPrefab: {fileID: 3418664919198881102, guid: cd97dc179f55540fbb57e559ead8e33a, type: 3}
+  tallObstaclePrefab: {fileID: 9166004493380578408, guid: b3850b01b4834114888b6c791daba251, type: 3}
 --- !u!1 &6427776833377482173
 GameObject:
   m_ObjectHideFlags: 0

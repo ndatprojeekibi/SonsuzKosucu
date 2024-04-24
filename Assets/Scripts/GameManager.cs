@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
         playingGoldsText.text = "Golds: " + golds.ToString();
 
         // Player in hizini arttir.
-        if(golds % 25 == 0)
+        if(golds % 10 == 0)
         {
             playerMovement.speed += playerMovement.speedIncrease;
         }
