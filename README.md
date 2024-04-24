@@ -1,7 +1,6 @@
     Çanakkale Onsekiz Mart Üniversitesi Bilgisayar Mühendisliği Bölümü
     Nesneye Dayalı Analiz ve Tasarım Dersi 
-Sonsuz Koşucu Oyunu 
-Proje Ekibi
+**Sonsuz Koşucu Oyunu Proje Ekibi**
 >1=>200401063 Murat Can YAMAN,
 
 >2=>210401121 Ali Anıl HAZAR,
