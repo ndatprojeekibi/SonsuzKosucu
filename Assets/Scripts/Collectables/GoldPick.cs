@@ -16,8 +16,8 @@ public class GoldPick : MonoBehaviour
             return;
         }
 
-        // Player in score una eklenecek.
-        GameManager.inst.IncrementScore();
+        // Player in golds una eklenecek.
+        GameManager.inst.IncrementGolds();
         // Gold Coin i yok et.
         Destroy(gameObject);
     }

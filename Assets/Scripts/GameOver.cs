@@ -3,19 +3,21 @@ using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour
 {
-    public Text goldsText;
+    public Text finalGoldsText;
     public static GameOver inst;
 
     // Start is called before the first frame update
     void Start()
     {
+        // En basta oyun bitis ekranini gostermeyi kapat.
         gameObject.SetActive(false);
     }
 
     public void Setup()
     {
+        // Oyun sonunda oyun bitis ekranini goster.
         gameObject.SetActive(true);
-        goldsText.text = GameManager.inst.score + " Golds";
+        finalGoldsText.text = GameManager.inst.golds + " Golds";
     }
 
     private void Awake()

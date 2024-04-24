@@ -8,6 +8,7 @@ public class CameraFollow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Baslangicta Camera ile Player arasindaki uzakligi al.
         offset = transform.position - player.position;
     }
 

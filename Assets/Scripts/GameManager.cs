@@ -3,15 +3,22 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public int score;
+    public int golds;
     public static GameManager inst;
 
-    public Text scoreText;
+    public PlayerMovement playerMovement;
+    public Text playingGoldsText;
 
-    public void IncrementScore()
+    public void IncrementGolds()
     {
-        score++;
-        scoreText.text = "Golds: " + score.ToString();
+        golds++;
+        playingGoldsText.text = "Golds: " + golds.ToString();
+
+        // Player in hizini arttir.
+        if(golds % 25 == 0)
+        {
+            playerMovement.speed += playerMovement.speedIncrease;
+        }
     }
 
     private void Awake()

@@ -42,6 +42,7 @@ public class GroundTile : MonoBehaviour
 
         for (int i = 0; i < goldsToSpawn; i++)
         {
+            // Bir Gold yarat ve bunu tile a bagla. Yani tile i yok ettigimizde Gold da Tile ile beraber yok olacak.
             GameObject temp = Instantiate(goldPrefab, transform);
             temp.transform.position = GetRandomPointInCollider(GetComponent<Collider>());
         }

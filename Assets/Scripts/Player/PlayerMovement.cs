@@ -11,13 +11,15 @@ public class PlayerMovement : MonoBehaviour
 
     bool alive = true;
 
-    GameOver gameOver;
+    public float speedIncrease = 0.2f;
 
     private void FixedUpdate()
     {
         // Player hayatta degilse hareket etmesin.
         if (!alive) return;
 
+        // Player in dikeydeki ve yataydaki hizlarini ayarladik.
+        // Yataydaki hizini oynanis daha iyi olsun diye horizontalMultiplier kere daha hizli yaptik.
         Vector3 forwardMove = transform.forward * speed * Time.fixedDeltaTime;
         Vector3 horizontalMove = transform.right * horizontalInput * speed * Time.fixedDeltaTime * horizontalMultiplier;
         rb.MovePosition(rb.position + forwardMove + horizontalMove);
@@ -43,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
     public void Die()
     {
         alive = false;
-
+        // Oyun bitince toplam biriken Golds u goster.
         GameOver.inst.Setup();
         Invoke("Restart", 2);
     }
